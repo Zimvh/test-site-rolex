@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+
+.max-container{
+  @apply mx-auto max-w-[1440px];
+}
