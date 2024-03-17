@@ -4,11 +4,11 @@ import React from "react";
 import { Button } from "@material-tailwind/react";
 
 import ComparePrice from "@/components/ComparePrice";
-import Header from "@/components/header";
-import Intro from "@/components/intro";
-import Search from "@/components/search";
-import Rolexprice from "@/components/rolexprice";
-import News from "@/components/News";
+import Header from "@/components/Header";
+import Intro from "@/components/Intro";
+import Search from "@/components/Search";
+import Rolexprice from "@/components/Rolexprice";
+
 import BrokenWatch from "@/components/BrokenWatch";
 import PointPurchaseRolex from "@/components/PointPurchaseRolex";
 import HigherPrice from "@/components/HigherPrice";
