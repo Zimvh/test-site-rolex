@@ -1,3 +1,4 @@
+
 //listOfRolexPrice
 export const ROLEX_PRICELST = [
     {
@@ -104,44 +105,44 @@ export const HIGHERPRICE = [
         price:'RM 70,950'
     },
     {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
+        picture:'/images/rolexlist/rolex-submariner-116613ln.jpeg',
+        title:'Rolex Submariner 116613LN',
+        desc:'We bought at',
+        price:'RM56,100'
+    },
+    {
+        picture:'/images/rolexlist/Rolex-DateJust-179173G.jpeg',
+        title:'Rolex DateJust 179173G',
+        desc:'We bought at',
+        price:'RM 23, 100'
+    },
+    {
+        picture:'/images/rolexlist/Rolex-Oyster-Perpetual-15200.jpeg',
+        title:'Rolex Oyster Perpetual 15200',
         desc:'We bought at',
         price:'RM 70,950'
     },
     {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
+        picture:'/images/rolexlist/Rolex-GMT-MasterII-116710LN.jpeg',
+        title:'Rolex GMT Master II 116710LN',
         desc:'We bought at',
         price:'RM 70,950'
     },
     {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
+        picture:'/images/rolexlist/Rolex-Daytona-116520.jpeg',
+        title:'Rolex Daytona 116520',
         desc:'We bought at',
         price:'RM 70,950'
     },
     {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
+        picture:'/images/rolexlist/Rolex-Pearlmaster-18946A-PT.jpeg',
+        title:'Rolex Pearlmaster 18946A PT',
         desc:'We bought at',
         price:'RM 70,950'
     },
     {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
-        desc:'We bought at',
-        price:'RM 70,950'
-    },
-    {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
-        desc:'We bought at',
-        price:'RM 70,950'
-    },
-    {
-        picture:'/images/rolex.png',
-        title:'Rolex Submariner 126613',
+        picture:'/images/rolexlist/Rolex-Yacht-MasterⅡ-116680.jpeg',
+        title:'Rolex Yacht-Master Ⅱ 116680',
         desc:'We bought at',
         price:'RM 70,950'
     },
@@ -277,5 +278,200 @@ export const ROLEXPRICETABLE = [
         price:'RM78,200.00',
         lastUpdate:'(2 days ago +0.06%)',
     }
-    
+
 ]
+
+export const FAQ =[
+    {
+        q:'Which Rolex models sell well?',
+        a:'Due to increasing global demand, Rolex watches tend to fetch respectable prices regardless of the model. Among them, the Daytona often fetches a very good price, and it is also the most popular in the market. Solid gold and platinum Rolexes also tend to sell well due to the recent surge in the gold market.'
+    },
+    {
+        q:'Does the purchase price vary depending on the production year and reference number of the Rolex?',
+        a:'Yes, Rolex prices sometimes vary depending on the production year and reference number. There are detailed classifications within the Rolex distribution market, and Rolex models tend to be traded at a higher price immediately after their release. On the other hand, older models might also increase in value as they become regarded as vintage models.'
+    },
+    {
+        q:'Does the condition of the Rolex affect its grading and price?',
+        a:'Yes, Rolexes tend to be graded based on their condition. Even if you are selling a brand-new watch that has never been worn, the price may vary depending on whether the protective seal on the face of the watch is still intact. Other factors that might also affect the grading of a Rolex include scratches and the functionality of the watch itself.'
+    },
+    {
+        q:'Do I need to consider the timing of when to sell my Rolex?',
+        a:'Unlike gold which has a standard market price, the purchase price offered by each Rolex dealer tends to fluctuate according to global market trends. Although the price of your Rolex may vary over time, Jewel Cafe is able to offer you a satisfactory price due to our numerous outlets overseas and secure distribution channels not only in Japan but also across the world.'
+    },
+    {
+        q:'Should I have my Rolex repaired or serviced before selling it?',
+        a:'Although it is true that having a Rolex repaired or serviced can increase its appraisal value, this also depends on the product type and the nature of the repair. There must be a balance between the increase in value and the cost of repairs, and it also depends on the condition of the watch, so if you have any doubts, we recommend that you first bring your watch to our store.'
+    },
+    {
+        q:'Can I still sell my Rolex if I don\'t have any of the accessories?',
+        a:'Yes, we will still buy such watches, so please bring them in. The accessories of a Rolex, especially the box and warranty card, can improve its resale value. Nevertheless, our appraisers will assess the authenticity and condition of the watch, so please feel free to visit our store even if your Rolex does not have any accessories.'
+    },
+    {
+        q:'Can I sell an old or broken Rolex?',
+        a:'Yes, we will still buy it. We accept scratched or broken Rolexes, as well as Rolexes with cracked glass, damaged straps, missing straps, or those that simply do not work, along with all the parts and accessories. We might also be able to buy old Rolexes at vintage prices, so please feel free to bring your watch to us.'
+    },
+    {
+        q:'Are there any "handling fees" or other costs associated with the purchase or appraisal of my Rolex?',
+        a:'We do not charge any fees for Rolex appraisals. Even if you are not satisfied with the appraised value of your Rolex watch and decide not to sell it, you will still not be charged any fees. Here at Jewel Cafe, speedy in-store purchases are the most popular option, but we also offer home delivery completely free of charge, so please do take advantage of this service!'
+    }
+]
+
+export const CUST_REVIEWS =[
+    {
+        point:'4.9',
+        star:'★★★★★',
+        title:'I sold the Daytona Ref,116520. I coincidentally bought',
+        desc:'I sold a Daytona that I miraculously able to purchase on a trip to Hawaii with my family about 10 years ago! When I went to an authorized store to buy a Rolex to commemorate my trip, I was told that there was a Daytona, the model that was discontinued, in stock. I immediately persuaded my family to buy it. I am a first-time owner of a luxury watch, but I never expected to become a Daytona owner, and I have been using only this Daytona since then! However, when I reluctantly decided to sell it due to various circumstances, I saw a newspaper flyer attached with Rolex’s purchase upgrade coupon from Jewel Café, I decided to give them a call, their service was good and also offer free appraisal service which make me decided to took my Daytona to their store. I am aware that the Daytona was very valuable, but I was surprised that the price was higher than I expected, even though it had been used a lot since I bought it. The guarantee card, box and spare part were all kept in good condition as well, which probably also contributed to the good valuation. I am thankful to both Daytona and Jewel Cafe for my past patronage!'
+    },
+    {
+        point:'5.0',
+        star:'★★★★★',
+        title:'I sold my old Rolex’s DateJust.',
+        desc:'I found a DateJust during home clearance that my father bought 40 years ago. Because I never seen my father wearing it, so I asked him about it, and he told me that he only wore it when he first bought it, but never use it since then for decades. I checked and found that it was an old model DateJust, and because I wanted to know if I could sell something I didn\'t even know if usable or not, so I went to Jewel Café, which I knew from passing by. The staff was very nice and made me feel at ease. She also explained to me thoroughly even though it was an old DateJust. I originally was going to ask for an appraisal only to see if I could sell it, but I got a great price and decided to sell it immediately! I will definitely use their service again!'
+    },
+    {
+        point:'4.9',
+        star:'★★★★★',
+        title:'I brought in my treasured Day-Date after seeing the flyers',
+        desc:'I have known about Jewel Cafe for a long time, but this is the first time I use their service. I got a flyer from Jewel Café a few days ago, my wife saw it and ask me to sell my Day-Date since I’m not using it. Because I never thought about selling it, so I brought it my Day-Date just to know the price. Since I almost never wore it, so it is barely overhauled, but I was shocked when I still able to get a pretty good offer. They told me they were having a 20000yen cashback campaign, I was hesitating whether to sell because I worked really hard to be able to bought this Day-Date, but considering the maintenance cost in the future, I decided to sell it in the end. Will use their service again when needed.'
+    },
+    {
+        point:'4.8',
+        star:'★★★★★',
+        title:'I was able to sell my Explorer',
+        desc:'I brought in an Explorer that my grandfather purchased 20 years ago. He loves Rolex watches, especially the simplicity of the Explorer, which he had dreamed of wearing. But these days he doesn\'t wear it at all and just has it stowed away. He saw a flyer about selling Explorers at a high price and said that now was the right time to sell it, so I brought it to the nearest Jewel Cafe. I was worried because all the accessories like the box and case had been thrown away, plus the watch hadn’t been serviced recently, but I was able to get a higher price than I had expected because of their campaign to purchase more Explorers, and for that I am very grateful.'
+    },
+    {
+        point:'5.0',
+        star:'★★★★★',
+        title:'I was able to sell a broken Explorer II',
+        desc:'I was able to sell my Explorer II that had a broken glass. I had knocked it due to my own carelessness and then stored it away in the closet for years. I had given up on selling it since it was damaged, but then I heard from the store that they were buying broken Explorer II watches, so I asked for an appraisal. I still had all the accessories including the spare links, guarantee card and box, which bumped up the offer price. I am very satisfied because I was able to sell it for a better price than I had expected.'
+    }
+]
+
+export const FOOTER =[
+    {
+        link:'',
+        title:'Shop Info',
+    },
+    {
+        link:'',
+        title:'Service & Product',
+    },
+    {
+        link:'',
+        title:'Purchase Blog',
+    },
+    {
+        link:'',
+        title:'About Us',
+    },
+    {
+        link:'',
+        title:'FAQ',
+    },
+    {
+        link:'',
+        title:'Media',
+    },
+    {
+        link:'',
+        title:'Column',
+    },
+    {
+        link:'',
+        title:'Company Profile',
+    },
+    {
+        link:'',
+        title:'Property',
+    },
+    {
+        link:'',
+        title:'Privacy Policy',
+    },
+]
+
+export const TYPE0FROLEX =[
+    {
+        picture:'/images/Rolex/daytona.png',
+        title:'Daytona'
+    },
+    {
+        picture:'/images/Rolex/datejust_b.jpg',
+        title:'Datejust'
+    },
+    {
+        picture:'/images/Rolex/DayDate.jpg',
+        title:'Day-date'
+    },
+    {
+        picture:'/images/Rolex/Explorer.jpg',
+        title:'Explorer'
+    },
+    {
+        picture:'/images/Rolex/ExplorerII.jpg',
+        title:'Explorer II'
+    },
+    {
+        picture:'/images/Rolex/Submariner.jpg',
+        title:'Submariner'
+    },
+    {
+        picture:'/images/Rolex/ExplorerII.jpg',
+        title:'GMT Master'
+    },
+    {
+        picture:'/images/Rolex/Deepsea.jpg',
+        title:'Sea Dweller'
+    },
+    {
+        picture:'/images/Rolex/skydweller.jpg',
+        title:'Sky Dweller'
+    },
+    {
+        picture:'/images/Rolex/airking.jpg',
+        title:'Airking'
+    },
+    {
+        picture:'/images/Rolex/Yatch.jpg',
+        title:'Yatch - Master'
+    },
+    {
+        picture:'/images/Rolex/Milgauss.jpg',
+        title:'Milgauss'
+    },
+    {
+        picture:'/images/Rolex/Cellini.jpg',
+        title:'Cellini'
+    },
+    {
+        picture:'/images/Rolex/turno.jpg',
+        title:'Turn - O - Graph'
+    },
+    {
+        picture:'/images/Rolex/rolex_an.jpg',
+        title:'Rolex Antique'
+    },
+    {
+        picture:'/images/Rolex/opp.jpg',
+        title:'Oyster Perpetual'
+    },
+    {
+        picture:'/images/Rolex/broken-rolex.jpg',
+        title:'Broken Rolex'
+    },
+]
+
+export const NEWS = [
+    {
+      date: "2022-01-01",
+      title: "Is it true that [Rolex] does not depreciate in value?",
+    },
+    { date: "2022-02-01", title: "Rolex’s rising price and market movements." },
+    {
+      date: "2022-03-01",
+      title: "Do I need a guarantee card to resell a Rolex?",
+    },
+    // Add more data items as needed
+  ];

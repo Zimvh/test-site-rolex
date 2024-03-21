@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BrokenWatch = () => {
   return (
-    <section className="flexCenter flex-col mt-14">
+    <section className="flexCenter flex-col mt-14 py-10 bg-[#EDF4ED]">
       <div className="padding-container max-container lg:px-56 px-6">
         <div className="max-container relative flex w-full h-[84px] flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[247px] ">
           {" "}

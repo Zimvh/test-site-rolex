@@ -1,8 +1,10 @@
 import { HIGHERPRICE } from "@/constants";
-import React from "react";
+
 import Image from "next/image";
 
-export default function HigherPrice() {
+import React from "react";
+
+const HigherPrice = () => {
   return (
     <section className="flexCenter flex-col mt-40">
       <div className="padding-container max-container w-full lg:px-56 px-6">
@@ -33,7 +35,8 @@ export default function HigherPrice() {
       </div>
     </section>
   );
-}
+};
+
 type HigherPriceItem = {
   picture: string;
   title: string;
@@ -63,3 +66,5 @@ const HigherPriceItem = ({ picture, title, desc, price }: HigherPriceItem) => {
     </li>
   );
 };
+
+export default HigherPrice;

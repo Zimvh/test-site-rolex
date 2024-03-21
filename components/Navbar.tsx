@@ -6,7 +6,12 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5 px-20">
       <Link href="/">
-        <Image src="/images/jc-logo.png" height={150} width={150} />
+        <Image
+          src="/images/jc-logo.png"
+          height={150}
+          width={150}
+          alt="jc-logo"
+        />
       </Link>
     </nav>
   );

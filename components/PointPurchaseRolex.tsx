@@ -2,7 +2,7 @@ import { POINTROLEX } from "@/constants";
 import React from "react";
 import Image from "next/image";
 
-export default function PointPurchaseRolex() {
+const PointPurchaseRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
       <div className="padding-container max-container w-full lg:px-56 px-6">
@@ -28,7 +28,7 @@ export default function PointPurchaseRolex() {
       </div>
     </section>
   );
-}
+};
 
 type PointRolexPurchaseItem = {
   picture: string;
@@ -66,3 +66,5 @@ const PointRolexPurchaseItem = ({
     </li>
   );
 };
+
+export default PointPurchaseRolex;

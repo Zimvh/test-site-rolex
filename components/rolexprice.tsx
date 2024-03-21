@@ -2,7 +2,7 @@ import { ROLEX_PRICELST } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
-export default function Rolexprice() {
+const Rolexprice = () => {
   return (
     <section className="flexCenter flex-col my-20">
       <div className="padding-container max-container w-full lg:px-56 px-6">
@@ -40,7 +40,7 @@ export default function Rolexprice() {
       </div>
     </section>
   );
-}
+};
 
 type PriceListItem = {
   picture: string;
@@ -75,3 +75,5 @@ const PriceListItem = ({ picture, title, price1, price2 }: PriceListItem) => {
     </div>
   );
 };
+
+export default Rolexprice;

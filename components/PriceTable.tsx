@@ -2,9 +2,9 @@ import { HIGHERPRICE, ROLEXPRICETABLE } from "@/constants";
 import React from "react";
 import Image from "next/image";
 
-export default function PriceTable() {
+const PriceTable = () => {
   return (
-    <section className="flexCenter flex-col">
+    <section className="flexCenter flex-col mt-10">
       <div className="padding-container max-container w-full lg:px-56 px-6">
         <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Rolex purchase price table
@@ -31,7 +31,7 @@ export default function PriceTable() {
       </div>
     </section>
   );
-}
+};
 
 type RolexPriceTableItem = {
   brand: string;
@@ -103,3 +103,5 @@ const RolexPriceTableItem = ({
     </li>
   );
 };
+
+export default PriceTable;
