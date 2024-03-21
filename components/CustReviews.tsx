@@ -42,7 +42,7 @@ const CustReviewsListItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="max-w-screen-xl px-5 bg-white min-h-sceen bg-[#EDF4ED]">
+    <div className="max-w-screen-xl px-5min-h-sceen bg-[#EDF4ED]">
       <div className="">
         <div className="flex items-center justify-center">
           <div className="bg-[#EDF4ED]">
