@@ -15,7 +15,7 @@ import TypeOfRolex from "@/components/TypeOfRolex";
 import Faq from "@/components/Faq";
 import CustReviews from "@/components/CustReviews";
 import RolexRanking from "@/components/RolexRanking";
-import Header from "@/components/Header";
+import Header from "@/components/Top";
 
 export default function Home() {
   return (
