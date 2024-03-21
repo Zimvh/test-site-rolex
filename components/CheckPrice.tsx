@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const search = () => {
+const CheckPrice = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-24 lg:px-56 mt-10">
       <div className="max-container padding-container relative w-full">
@@ -47,4 +47,4 @@ const search = () => {
   );
 };
 
-export default search;
+export default CheckPrice;
