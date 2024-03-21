@@ -1,7 +1,7 @@
 import { NEWS } from "@/constants";
 import React from "react";
 
-const news = () => {
+const News = () => {
   return (
     <section className="lg:m-10 m-5">
       <div className="padding-container max-container w-full lg:px-72 lpx-6">
@@ -39,4 +39,4 @@ const NewsListItem = ({ date, title }: NewsListItem) => {
   );
 };
 
-export default news;
+export default News;
