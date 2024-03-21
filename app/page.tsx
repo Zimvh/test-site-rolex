@@ -23,11 +23,11 @@ import News from "@/components/News";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <News />
       <Intro />
       <Search />
-      <Rolexprice />
+      <Rolexprice /> */}
       <ComparePrice />
       <BrokenWatch />
       <PointPurchaseRolex />
