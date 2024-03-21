@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = () => {
+const intro = () => {
   return (
     <section className="flexCenter flex-col mt-10">
       <div className="padding-container max-container w-full lg:px-56 px-5">
@@ -19,4 +19,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default intro;
