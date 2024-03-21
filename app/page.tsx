@@ -16,7 +16,7 @@ import Faq from "@/components/Faq";
 import CustReviews from "@/components/CustReviews";
 import RolexRanking from "@/components/RolexRanking";
 import Header from "@/components/Top";
-import News from "@/components/News";
+import News from "@/components/TopNews";
 
 export default function Home() {
   return (
