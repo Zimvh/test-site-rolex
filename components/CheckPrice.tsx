@@ -3,7 +3,7 @@ import React from "react";
 
 const CheckPrice = () => {
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-24 lg:px-56 mt-10">
+    <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-4 lg:px-56 mt-10">
       <div className="max-container padding-container relative w-full">
         <div className="flex w-full auto lg:h-[260px] flex-col lg:flex-row">
           <div className="relative">

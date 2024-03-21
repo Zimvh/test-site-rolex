@@ -19,6 +19,7 @@ import Header from "@/components/Top";
 import News from "@/components/TopNews";
 import WhySellRolex from "@/components/WhySellRolex";
 import CheckPrice from "@/components/CheckPrice";
+import ListRolexPrice from "@/components/ListRolexPrice";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
       <News />
       <WhySellRolex />
       <CheckPrice />
-
+      <ListRolexPrice />
       <ComparePrice />
       <BrokenWatch />
       <PointPurchaseRolex />

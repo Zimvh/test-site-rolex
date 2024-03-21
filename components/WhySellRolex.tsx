@@ -2,7 +2,7 @@ import React from "react";
 
 const WhySellRolex = () => {
   return (
-    <section className="flexCenter flex-col mt-10">
+    <section className="flexCenter flex-col mt-16">
       <div className="padding-container max-container w-full lg:px-56 px-5">
         <h2 className="text-center text-3xl font-bold mb-4">Why Sell Rolex?</h2>
         <p className="justify-between leading-8 text-left">
