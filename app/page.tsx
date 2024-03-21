@@ -15,15 +15,16 @@ import TypeOfRolex from "@/components/TypeOfRolex";
 import Faq from "@/components/Faq";
 import CustReviews from "@/components/CustReviews";
 import RolexRanking from "@/components/RolexRanking";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <>
-      {/* <Header />
-      <News />
+      <Header />
+      {/* <News />
       <Intro />
       <Search />
-      <Rolexprice /> */}
+      <Rolexprice />  */}
       <ComparePrice />
       <BrokenWatch />
       <PointPurchaseRolex />
