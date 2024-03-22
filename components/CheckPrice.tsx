@@ -1,7 +1,50 @@
+"use client";
+
+import { ROLEXPRICE } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const CheckPrice = () => {
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data when component mounts
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const data = await client.fetchData(); // Assuming fetchData is a function in your useClient hook
+      setFilteredData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const handleCategorySelect = (category: React.SetStateAction<string>) => {
+    setSearchInput(category); // Set input field value to selected category
+  };
+
+  const handleInputChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setSearchInput(event.target.value);
+  };
+
+  const handleSearch = () => {
+    // Filter data based on input value
+    const filtered = ROLEXPRICE.filter((item) =>
+      item.category.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    setFilteredData(filtered);
+  };
+
+  // Get unique categories
+  const uniqueCategories = Array.from(
+    new Set(ROLEXPRICE.map((item) => item.category))
+  );
+
   return (
     <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-4 lg:px-56 mt-10">
       <div className="max-container padding-container relative w-full">
@@ -17,11 +60,16 @@ const CheckPrice = () => {
               <input
                 type="text"
                 placeholder="Search"
-                className="py-2 px-4 mr-[4px]"
+                className="py-2 px-4 mr-[4px] text-black"
+                value={searchInput}
+                onChange={handleInputChange}
               />
-              <div className="cursor-pointer bg-white p-[10px]">
+              <div
+                className="cursor-pointer bg-white p-[10px]"
+                onClick={handleSearch}
+              >
                 <Image
-                  src="/images/searchIcon.png" //Replace with the actual image source for the search icon
+                  src="/images/searchIcon.png"
                   alt="Search Icon"
                   width={20}
                   height={20}
@@ -30,20 +78,91 @@ const CheckPrice = () => {
               </div>
             </div>
             <div className="w-full lg:w-[400px]">
-              <button className="px-4 rounded border border-white text-white cursor-pointer text-[10px] mr-2">
-                Submariner
-              </button>
-              <button className="px-4 rounded border text-white cursor-pointer text-[10px] mr-2">
-                Datejust
-              </button>
-              <button className="px-4 rounded border text-white cursor-pointer text-[10px] mr-2">
-                Explorer II
-              </button>
+              {/* Render buttons for unique categories */}
+              {uniqueCategories.map((category) => (
+                <button
+                  key={category}
+                  className={`px-4 rounded border border-white text-white cursor-pointer text-[10px] mr-2`}
+                  onClick={() => handleCategorySelect(category)}
+                >
+                  {category}
+                </button>
+              ))}
             </div>
           </div>
         </div>
       </div>
+      <RolexPriceItem data={filteredData} />
     </section>
+  );
+};
+
+const RolexPriceItem = ({ data }) => {
+  return (
+    <div className="w-full lg:py-4 lg:px-5">
+      <ul className="">
+        {data.map(
+          (
+            item: {
+              title:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | Iterable<React.ReactNode>
+                | React.ReactPortal
+                | React.PromiseLikeOfReactNode
+                | null
+                | undefined;
+              model:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | Iterable<React.ReactNode>
+                | React.ReactPortal
+                | React.PromiseLikeOfReactNode
+                | null
+                | undefined;
+              price:
+                | string
+                | number
+                | boolean
+                | React.ReactElement<
+                    any,
+                    string | React.JSXElementConstructor<any>
+                  >
+                | Iterable<React.ReactNode>
+                | React.ReactPortal
+                | React.PromiseLikeOfReactNode
+                | null
+                | undefined;
+            },
+            index: React.Key | null | undefined
+          ) => (
+            <li
+              key={index}
+              className="flex py-5 lg:px-28 px-8 border-b-2 grid-col-2"
+            >
+              <div className="flex-1">
+                <p>
+                  {item.title} {item.model}
+                </p>
+              </div>
+              <div className="flex-1 text-right">
+                <p>Market price {item.price}</p>
+              </div>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
   );
 };
 

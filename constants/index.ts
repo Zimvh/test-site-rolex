@@ -475,3 +475,54 @@ export const NEWS = [
     },
     // Add more data items as needed
   ];
+
+
+  export const ROLEXPRICE = [
+    {
+        title:'Datejust',
+        model:'116233G SS + YG champagne',
+        price:'RM33,000',
+        category:'Datejust'
+    },
+    {
+        title:'Datejust',
+        model:'116233 SS + YG champagne',
+        price:'RM30,000',
+        category:'Datejust'
+    },
+    {
+        title:'Datejust 41',
+        model:'126333NG SS + YG White Shell',
+        price:'RM52,000',
+        category:'Datejust'
+    },
+    {
+        title:'Datejust 41',
+        model:'126333G SS + YG Black',
+        price:'RM52,000',
+        category:'Datejust'
+    },
+    {
+        title:'Datejust 41',
+        model:'126333G SS + YG champagne',
+        price:'RM52,000',
+        category:'Datejust'
+    },{
+        title:'Datejust 41',
+        model:'126333 SS + YG Slate Rome',
+        price:'RM52,000',
+        category:'Datejust'
+    },
+    {
+        title:'Daytona',
+        model:'116500LN SS White',
+        price:'RM155,000',
+        category:'Daytona'
+    },
+    {
+        title:'Daytona',
+        model:'116500LN SS Black',
+        price:'RM130,000',
+        category:'Daytona'
+    }
+  ]
