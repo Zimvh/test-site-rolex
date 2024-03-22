@@ -3,24 +3,25 @@
 import { ROLEXPRICE } from "@/constants";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+// const client = client();
 
 const CheckPrice = () => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredData, setFilteredData] = useState([]);
 
-  useEffect(() => {
-    // Fetch data when component mounts
-    fetchData();
-  }, []);
+  //   useEffect(() => {
+  //     // Fetch data when component mounts
+  //     fetchData();
+  //   }, []);
 
-  const fetchData = async () => {
-    try {
-      const data = await client.fetchData(); // Assuming fetchData is a function in your useClient hook
-      setFilteredData(data);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+  //   const fetchData = async () => {
+  //     try {
+  //       const data = await client.fetchData(); // Assuming fetchData is a function in your useClient hook
+  //       setFilteredData(data);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
 
   const handleCategorySelect = (category: React.SetStateAction<string>) => {
     setSearchInput(category); // Set input field value to selected category
