@@ -14,6 +14,7 @@ const Navbar = () => {
           height={150}
           width={150}
           alt="jc-logo"
+          title="Jewel Cafe Logo"
         />
       </Link>
     </nav>

@@ -6,9 +6,9 @@ const PriceTable = () => {
   return (
     <section className="flexCenter flex-col mt-10">
       <div className="padding-container max-container w-full lg:px-56 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Rolex purchase price table
-        </p>
+        </h2>
 
         <div>
           <ul className="mt-10 grid gap-5 grid-cols-2 lg:grid-cols-4">
@@ -76,6 +76,7 @@ const RolexPriceTableItem = ({
             // width={100}
             // height={440}
             priority
+            title="Jewel Cafe Rolex Banner"
           />
         </div>
         <div className="flex">
@@ -88,6 +89,7 @@ const RolexPriceTableItem = ({
               width={40}
               height={40}
               priority
+              title={brand}
             />
           </div>
           <div className="text-end mt-3 w-36  ">

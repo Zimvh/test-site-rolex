@@ -8,9 +8,9 @@ const HigherPrice = () => {
   return (
     <section className="flexCenter flex-col mt-40">
       <div className="padding-container max-container w-full lg:px-56 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           We purchase at a Higher Price!
-        </p>
+        </h2>
         <p className="justify-between leading-8 text-center">
           Unparalleled number of assessments and purchases High price purchases
           of Rolex.
@@ -56,6 +56,7 @@ const HigherPriceItem = ({ picture, title, desc, price }: HigherPriceItem) => {
           // width={100}
           // height={440}
           priority
+          title={title}
         />
       </div>
       <div className="p-4 text-end">

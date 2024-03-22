@@ -5,9 +5,9 @@ const RolexRanking = () => {
   return (
     <section className="flexCenter flex-col mt-10">
       <div className="padding-container max-container w-full lg:px-56 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Rolex Purchase Ranking
-        </p>
+        </h2>
 
         <div className="grid lg:grid-cols-3 grid-cols-1 mb-[10px] pt-9 pb-0 justify-items-center">
           <div className="text-center my-10">
@@ -16,6 +16,7 @@ const RolexRanking = () => {
               width={180}
               height={280}
               alt={"Submariner"}
+              title="Rolex Submariner"
             />
             <p>SUBMARINER</p>
           </div>
@@ -25,6 +26,7 @@ const RolexRanking = () => {
               width={300}
               height={300}
               alt={"Submariner"}
+              title="Rolex Datejust"
             />
             <p>DATEJUST</p>
           </div>
@@ -34,6 +36,7 @@ const RolexRanking = () => {
               width={150}
               height={180}
               alt={"Submariner"}
+              title="Rolex Explorer II"
             />
             <p>EXPLORER II</p>
           </div>

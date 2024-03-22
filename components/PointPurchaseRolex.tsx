@@ -6,9 +6,9 @@ const PointPurchaseRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
       <div className="padding-container max-container w-full lg:px-80 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Points of Rolex Purchases
-        </p>
+        </h2>
         <p className="justify-between leading-8 text-center my-4">
           Why Jewel Cafe is strong in Rolex purchases
         </p>
@@ -55,6 +55,7 @@ const PointRolexPurchaseItem = ({
             // width={100}
             // height={440}
             priority
+            title={title}
           />
         </div>
         <div className="p-4">

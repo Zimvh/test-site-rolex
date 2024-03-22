@@ -12,6 +12,7 @@ const Top = () => {
           layout="fill"
           objectFit="cover"
           priority
+          title="Rolex Top Banner"
         />
       </div>
 
@@ -23,6 +24,7 @@ const Top = () => {
           layout="fill"
           objectFit="cover"
           priority
+          title="Rolex Top Banner"
         />
       </div>
     </section>

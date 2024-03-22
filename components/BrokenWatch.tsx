@@ -13,6 +13,7 @@ const BrokenWatch = () => {
             layout="fill"
             objectFit="cover"
             priority
+            title="Banner"
           />
         </div>
         <h2 className="text-left lg:leading-[3rem] text-sm lg:text-4xl font-bold my-4">

@@ -6,9 +6,9 @@ const CustReviews = () => {
   return (
     <section className="flexCenter flex-col pt-10 bg-[#EDF4ED]">
       <div className="padding-container max-container w-full lg:px-56">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
-          Customer Review
-        </p>
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+          Customer Reviews
+        </h2>
 
         <div>
           {CUST_REVIEWS.map((custReviewsList) => (

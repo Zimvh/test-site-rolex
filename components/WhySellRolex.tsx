@@ -4,7 +4,7 @@ const WhySellRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
       <div className="padding-container max-container w-full lg:px-56 px-5">
-        <h2 className="text-center text-3xl font-bold mb-4">Why Sell Rolex?</h2>
+        <h1 className="text-center text-3xl font-bold mb-4">Why Sell Rolex?</h1>
         <p className="justify-between leading-8 text-left">
           If you want to sell Rolex, leave it to Jewel Cafe! Numerous adults
           around the world dream of owning Rolex watch, such as the Daytona,

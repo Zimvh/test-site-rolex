@@ -51,7 +51,13 @@ const CheckPrice = () => {
       <div className="max-container padding-container relative w-full">
         <div className="flex w-full auto lg:h-[260px] flex-col lg:flex-row">
           <div className="relative">
-            <Image src="/images/bnr.png" width={1000} height={440} alt="bnr" />
+            <Image
+              src="/images/bnr.png"
+              width={1000}
+              height={440}
+              alt="bnr"
+              title="Banner Top"
+            />
           </div>
           <div className="bg-[#31452A] text-white lg:p-[60px] p-[48px] text-center">
             <p className="text-3xl font-bold">Name your Rolex</p>
@@ -75,6 +81,7 @@ const CheckPrice = () => {
                   width={20}
                   height={20}
                   className="cursor-pointer"
+                  title="Search Icon"
                 />
               </div>
             </div>

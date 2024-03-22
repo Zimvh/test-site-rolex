@@ -6,9 +6,9 @@ const ComparePrice = () => {
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full lg:px-56 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Comparing with other companies we purchase Rolex at a higher price?
-        </p>
+        </h2>
         <p className="justify-between leading-8 text-left">
           We have a wide range of sales channels, and our professional staff can
           provide you with the best price in the industry for any kind of Luxury
@@ -53,6 +53,7 @@ const PriceListGraphItem = ({ picture, title, refNum }: PriceListGraphItem) => {
             // width={100}
             // height={440}
             priority
+            title={title}
           />
         </div>
       </div>

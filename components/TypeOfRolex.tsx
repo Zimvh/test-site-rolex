@@ -6,9 +6,9 @@ const TypeOfRolex = () => {
   return (
     <section className="flexCenter flex-col mt-40">
       <div className="padding-container max-container w-full lg:px-56 px-6">
-        <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Type of Rolex Watches
-        </p>
+        </h2>
 
         <div>
           <ul className="mt-10 grid gap-5 grid-cols-2 lg:grid-cols-4">
@@ -43,6 +43,7 @@ const TypeofRolex = ({ picture, title }: TypeofRolex) => {
           width={250}
           height={250}
           priority
+          title={title}
         />
       </div>
       <div className="text-center border border-green-950 bg-green-900 rounded-xl text-white">

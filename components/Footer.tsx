@@ -14,6 +14,7 @@ const Footer = () => {
               alt="logo"
               width={500}
               height={500}
+              title="Footer logo"
             />
           </Link>
         </div>
@@ -38,6 +39,7 @@ const Footer = () => {
             width={100}
             height={150}
             className="absolute pb-[22px]"
+            title="Woman JC"
           />
           <p className="text-[26px] flex flex-wrap m-4 text-white font-semibold ml-[120px]">
             Jewel Cafe Outlet Staff Recruitment
