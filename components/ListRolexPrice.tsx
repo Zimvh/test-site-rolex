@@ -25,7 +25,7 @@ const ListRolexPrice = () => {
   };
 
   return (
-    <section className="flexCenter flex-col my-20">
+    <section className="flexCenter flex-col my-20 relative">
       <div className="padding-container max-container w-full lg:px-72 px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
           Price of Rolex watches have seen tremendous growth over the year.
@@ -54,7 +54,7 @@ const ListRolexPrice = () => {
         <ul>
           {ROLEX_PRICELST.slice(
             0,
-            isMobile && !expanded ? 2 : ROLEX_PRICELST.length
+            isMobile && !expanded ? 3 : ROLEX_PRICELST.length
           ).map((pricelist) => (
             <PriceListItem
               key={pricelist.title}
@@ -67,13 +67,17 @@ const ListRolexPrice = () => {
         </ul>
         {!expanded && isMobile && (
           <button
-            className="text-center block mx-auto my-4 px-8 py-2 bg-[#31452A] text-white rounded-3xl"
+            className="relative text-center block mx-auto mb-4 mt-16 px-8 py-2 bg-[#31452A] text-white rounded-3xl z-20"
             onClick={toggleExpansion}
           >
             See more
           </button>
         )}
       </div>
+      {/* Bottom div with blurry effect */}
+      {isMobile && !expanded && (
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-transparent to-white blur-md"></div>
+      )}
     </section>
   );
 };
