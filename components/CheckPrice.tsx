@@ -3,33 +3,35 @@
 import { ROLEXPRICE } from "@/constants";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-// const client = client();
 
 const CheckPrice = () => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [uniqueCategories, setUniqueCategories] = useState([]);
 
-  //   useEffect(() => {
-  //     // Fetch data when component mounts
-  //     fetchData();
-  //   }, []);
+  useEffect(() => {
+    // Fetch data when component mounts
+    fetchData();
+  }, []);
 
-  //   const fetchData = async () => {
-  //     try {
-  //       const data = await client.fetchData(); // Assuming fetchData is a function in your useClient hook
-  //       setFilteredData(data);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   };
+  const fetchData = async () => {
+    try {
+      // Get unique categories
+      const categories = Array.from(
+        new Set(ROLEXPRICE.map((item) => item.category))
+      );
 
-  const handleCategorySelect = (category: React.SetStateAction<string>) => {
+      setUniqueCategories(categories);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const handleCategorySelect = (category) => {
     setSearchInput(category); // Set input field value to selected category
   };
 
-  const handleInputChange = (event: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
+  const handleInputChange = (event) => {
     setSearchInput(event.target.value);
   };
 
@@ -40,11 +42,6 @@ const CheckPrice = () => {
     );
     setFilteredData(filtered);
   };
-
-  // Get unique categories
-  const uniqueCategories = Array.from(
-    new Set(ROLEXPRICE.map((item) => item.category))
-  );
 
   return (
     <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-4 lg:px-56 mt-10">
@@ -102,66 +99,21 @@ const RolexPriceItem = ({ data }) => {
   return (
     <div className="w-full lg:py-4 lg:px-5">
       <ul className="">
-        {data.map(
-          (
-            item: {
-              title:
-                | string
-                | number
-                | boolean
-                | React.ReactElement<
-                    any,
-                    string | React.JSXElementConstructor<any>
-                  >
-                | Iterable<React.ReactNode>
-                | React.ReactPortal
-                | React.PromiseLikeOfReactNode
-                | null
-                | undefined;
-              model:
-                | string
-                | number
-                | boolean
-                | React.ReactElement<
-                    any,
-                    string | React.JSXElementConstructor<any>
-                  >
-                | Iterable<React.ReactNode>
-                | React.ReactPortal
-                | React.PromiseLikeOfReactNode
-                | null
-                | undefined;
-              price:
-                | string
-                | number
-                | boolean
-                | React.ReactElement<
-                    any,
-                    string | React.JSXElementConstructor<any>
-                  >
-                | Iterable<React.ReactNode>
-                | React.ReactPortal
-                | React.PromiseLikeOfReactNode
-                | null
-                | undefined;
-            },
-            index: React.Key | null | undefined
-          ) => (
-            <li
-              key={index}
-              className="flex py-5 lg:px-28 px-8 border-b-2 grid-col-2"
-            >
-              <div className="flex-1">
-                <p>
-                  {item.title} {item.model}
-                </p>
-              </div>
-              <div className="flex-1 text-right">
-                <p>Market price {item.price}</p>
-              </div>
-            </li>
-          )
-        )}
+        {data.map((item, index) => (
+          <li
+            key={index}
+            className="flex py-5 lg:px-28 px-8 border-b-2 grid-col-2"
+          >
+            <div className="flex-1">
+              <p>
+                {item.title} {item.model}
+              </p>
+            </div>
+            <div className="flex-1 text-right">
+              <p>Market price {item.price}</p>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );
