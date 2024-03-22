@@ -27,7 +27,7 @@ const CheckPrice = () => {
     }
   };
 
-  const handleCategorySelect = (category) => {
+  const handleCategorySelect = (category: string) => {
     setSearchInput(category); // Set input field value to selected category
   };
 
