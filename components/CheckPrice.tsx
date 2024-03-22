@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 const CheckPrice = () => {
   const [searchInput, setSearchInput] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-  const [uniqueCategories, setUniqueCategories] = useState([]);
+  const [uniqueCategories, setUniqueCategories] = useState<string[]>([]);
 
   useEffect(() => {
     // Fetch data when component mounts
