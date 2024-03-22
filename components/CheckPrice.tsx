@@ -6,7 +6,10 @@ import React, { useState, useEffect } from "react";
 
 const CheckPrice = () => {
   const [searchInput, setSearchInput] = useState("");
-  const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState<
+    { title: string; model: string; price: string; category: string }[]
+  >([]);
+
   const [uniqueCategories, setUniqueCategories] = useState<string[]>([]);
 
   useEffect(() => {
@@ -31,7 +34,7 @@ const CheckPrice = () => {
     setSearchInput(category); // Set input field value to selected category
   };
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(event.target.value);
   };
 
@@ -95,7 +98,11 @@ const CheckPrice = () => {
   );
 };
 
-const RolexPriceItem = ({ data }) => {
+const RolexPriceItem = ({
+  data,
+}: {
+  data: { title: string; model: string; price: string; category: string }[];
+}) => {
   return (
     <div className="w-full lg:py-4 lg:px-5">
       <ul className="">
