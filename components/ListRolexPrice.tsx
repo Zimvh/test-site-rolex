@@ -1,12 +1,33 @@
+"use client";
+
 import { ROLEX_PRICELST } from "@/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const ListRolexPrice = () => {
+  const [expanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleExpansion = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <section className="flexCenter flex-col my-20">
-      <div className="padding-container max-container w-full lg:px-56 px-6">
-        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
+      <div className="padding-container max-container w-full lg:px-72 px-6">
+        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
           Price of Rolex watches have seen tremendous growth over the year.
         </h2>
         <div className="grid grid-cols-4 mb-[10px] pt-9 pb-0">
@@ -16,18 +37,25 @@ const ListRolexPrice = () => {
           {/* Column 2: Title */}
           <div className="col-span-1 self-center text-[12px] lg:text-[16px]"></div>
 
-          {/* Column 3: Price 1 */}
-          <div className="col-span-1 self-center justify-self-center">
-            <p className="text-[12px] lg:text-[16px] p-3 bg-gray-300">2015</p>
+          <div className="col-span-1 self-center justify-self-center relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-300 via-white to-gray-300"></div>
+            <p className="text-[12px] lg:text-[16px] px-5 relative z-10">
+              2015
+            </p>
           </div>
 
-          {/* Column 4: Price 2 */}
-          <div className="col-span-1 self-center justify-self-center">
-            <p className="text-[12px] lg:text-[16px] p-3 bg-gray-300">2022</p>
+          <div className="col-span-1 self-center justify-self-center relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-300 via-white to-gray-300"></div>
+            <p className="text-[12px] lg:text-[16px] px-5 relative z-10">
+              2022
+            </p>
           </div>
         </div>
         <ul>
-          {ROLEX_PRICELST.map((pricelist) => (
+          {ROLEX_PRICELST.slice(
+            0,
+            isMobile && !expanded ? 2 : ROLEX_PRICELST.length
+          ).map((pricelist) => (
             <PriceListItem
               key={pricelist.title}
               picture={pricelist.picture}
@@ -37,6 +65,14 @@ const ListRolexPrice = () => {
             />
           ))}
         </ul>
+        {!expanded && isMobile && (
+          <button
+            className="text-center block mx-auto my-4 px-8 py-2 bg-[#31452A] text-white rounded-3xl"
+            onClick={toggleExpansion}
+          >
+            See more
+          </button>
+        )}
       </div>
     </section>
   );

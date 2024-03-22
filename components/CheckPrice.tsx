@@ -47,9 +47,9 @@ const CheckPrice = () => {
   };
 
   return (
-    <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-4 lg:px-56 mt-10">
+    <section className="flex-col flexCenter overflow-hidden bg-center bg-no-repeat lg:py-4 lg:px-72 mt-10">
       <div className="max-container padding-container relative w-full">
-        <div className="flex w-full auto lg:h-[260px] flex-col lg:flex-row">
+        <div className="bg-[#31452A] flex w-full auto lg:h-[234px] flex-col lg:flex-row">
           <div className="relative">
             <Image
               src="/images/bnr.png"
@@ -59,7 +59,7 @@ const CheckPrice = () => {
               title="Banner Top"
             />
           </div>
-          <div className="bg-[#31452A] text-white lg:p-[60px] p-[48px] text-center">
+          <div className="self-center text-white p-[19px] text-center">
             <p className="text-3xl font-bold">Name your Rolex</p>
             <p className="text-base">and check the price</p>
 

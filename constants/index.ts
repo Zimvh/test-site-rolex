@@ -526,3 +526,73 @@ export const NEWS = [
         category:'Daytona'
     }
   ]
+
+
+  export const OUTLET = [
+    {
+        name:'AEON AU2 Setiawangsa',
+        address:'Lot G26 Ground Floor, No.6 Jalan Taman Setiawangsa AU2, Taman Keramat, 54200 Kuala Lumpur.',
+        tel:'TEL 03-4251 1151',
+        state:'Kuala Lumpur',
+    },
+    {
+        name:'AEON Taman Maluri',
+        address:'Lot F29, First Floor, Aeon Taman Maluri shopping centre, Jalan Jejaka, Taman Maluri, Cheras 55100 Kuala Lumpur.',
+        tel:'TEL 03-9201 4001',
+        state:'Kuala Lumpur',
+    },
+    {
+        name:'AEON Bukit Raja',
+        address:'F34 First Floor, Persiaran Bukit Raja 2, Bandar Baru Klang, 41150 Klang, Selangor',
+        tel:'TEL 03-3358 8466',
+        state:'Selangor',
+    },
+    {
+        name:'Tropicana Gardens Mall',
+        address:'LG17&18 - East Walk, Tropicana Garden Mall, No. 2A, Persiaran Surian, Tropicana Indah, 47810 Petaling Jaya, Selangor',
+        tel:'TEL 03-7612 6827',
+        state:'Selangor',
+    },
+    {
+        name:'AEON Shah Alam',
+        address:'Lot G36, Ground Floor, Aeon Mall Shah Alam Shopping Centre, Jalan Akuatik 13/64, Seksyen 13, 40100 Shah Alam, Selangor',
+        tel:'TEL 03-3358 8466',
+        state:'Selangor',
+    },
+    {
+        name:'AEON Taman Equine',
+        address:'Lot G15 Ground Floor, Aeon Taman Equine Shopping Centre,No.2, Jalan Equine Taman Equine, Pusat Bandar Putra Permai, 43300 Seri Kembangan, Selangor',
+        tel:'TEL 03-8959 4110',
+        state:'Selangor',
+    },
+    {
+        name:'AEON Bukit Tinggi',
+        address:'S51 Second floor, 1, Persiaran Batu Nilam 1/Ks6, Bandar Bukit Tinggi 2, 41200 Klang, Selangor',
+        tel:'TEL 03-3319 9974',
+        state:'Selangor',
+    },
+    {
+        name:'AEON Bukit Mertajam',
+        address:'Lot F35 First Floor, Jalan Rozhan Alma, 14000 Bukit Mertajam, Pulau Pinang',
+        tel:'TEL 04-536 0331',
+        state:'Penang',
+    },
+    {
+        name:'Gurney Paragon',
+        address:'L5-32, Gurney Paragon Shopping Mall, 163d, Gurney Dr. 10250 George Town, Pulau Pinang',
+        tel:'TEL 04-227 9041',
+        state:'Penang',
+    },
+    {
+        name:'Paradigm Mall',
+        address:'Lot 2F-58, Level 2, Paradigm Mall Johor Bahru, Jalan Skudai, Taman Bukit Mewah, 81200 Johor Bahru, Johor',
+        tel:'TEL 07-2321 567',
+        state:'Johor',
+    },
+    {
+        name:'Toppen Shopping Centre',
+        address:'Toppen Shopping Centre, Lot No. L2.31, No. 33A, Jalan Harmonium, Taman Desa Tebrau, 81100 Johor Bahru, Johor Dahrul Takzim',
+        tel:'TEL 07-3500 321',
+        state:'Johor',
+    },
+  ]

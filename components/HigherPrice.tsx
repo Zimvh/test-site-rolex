@@ -7,7 +7,7 @@ import React from "react";
 const HigherPrice = () => {
   return (
     <section className="flexCenter flex-col mt-40">
-      <div className="padding-container max-container w-full lg:px-56 px-6">
+      <div className="padding-container max-container w-full lg:px-72 px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           We purchase at a Higher Price!
         </h2>

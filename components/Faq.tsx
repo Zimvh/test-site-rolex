@@ -3,11 +3,11 @@ import React from "react";
 
 const Faq = () => {
   return (
-    <section className="flexCenter flex-col">
-      <div className="padding-container max-container w-full lg:px-56 px-5">
+    <section className="flexCenter flex-col mt-20">
+      <div className="padding-container max-container w-full lg:px-72 px-5">
         <div className="text-center">
           <h2 className="font-bold text-5xl mt-5 tracking-tight">
-            Rolex purchase FAQ
+            Rolex purchase <span className="text-[#265C26]">FAQ</span>
           </h2>
         </div>
         <div className="grid divide-y divide-neutral-200 mx-auto mt-8">

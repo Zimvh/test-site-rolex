@@ -1,9 +1,78 @@
-import { FOOTER } from "@/constants";
+"use client";
+
+import { FOOTER, OUTLET } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-const Footer = () => {
+type FooterListItem = {
+  title: string;
+  link: string;
+};
+
+type OutletListItemProps = {
+  outlet: {
+    name: string;
+    address: string;
+    tel: string;
+  };
+};
+
+const OutletListItem: React.FC<OutletListItemProps> = ({ outlet }) => {
+  const { name, address, tel } = outlet;
+
+  return (
+    <div>
+      <p className="font-bold text-green-950 my-1">{name}</p>
+      <p className="text-[12px] my-1">{address}</p>
+
+      <div className="flex">
+        <p className="font-bold">{tel}</p>
+        <p className="border border-green-950 lg:ml-40 ml-28 font-bold px-2">
+          More Info
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const Footer: React.FC = () => {
+  const [uniqueState, setUniqueState] = useState<string[]>([]);
+  const [selectedState, setSelectedState] = useState<string | null>(null);
+  const [outletsInSelectedState, setOutletsInSelectedState] = useState<
+    { name: string; address: string; tel: string }[]
+  >([]);
+
+  useEffect(() => {
+    // Fetch data when component mounts
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (uniqueState.length > 0) {
+      // Initially select the first state
+      handleStateClick(uniqueState[0]);
+    }
+  }, [uniqueState]);
+
+  const fetchData = async () => {
+    try {
+      // Get unique categories
+      const states = Array.from(new Set(OUTLET.map((item) => item.state)));
+      setUniqueState(states);
+
+      console.log(uniqueState);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const handleStateClick = (state: string) => {
+    setSelectedState(state);
+    const filteredOutlets = OUTLET.filter((item) => item.state === state);
+    setOutletsInSelectedState(filteredOutlets);
+  };
+
   return (
     <footer className="flexCenter flex-col mt-10 bg-[#EDF4ED] py-5">
       <div className="padding-container max-container flex w-full flex-col lg:px-56 px-6">
@@ -21,9 +90,9 @@ const Footer = () => {
       </div>
       <div>
         <ul className="flex flex-wrap lg:px-96  px-6 justify-center">
-          {FOOTER.map((footerList) => (
+          {FOOTER.map((footerList, index) => (
             <FooterListItem
-              key={footerList.title}
+              key={index}
               title={footerList.title}
               link={footerList.link}
             />
@@ -52,64 +121,42 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="flex justify-center gap-3 my-9 mx-5">
-        <div className="bg-[#BED8B2] rounded-md">
-          <p className="p-3 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
-            Kuala Lumpur
-          </p>
+      <div className="flex justify-center my-9 mx-5">
+        <div className="flex rounded-md gap-3 ">
+          {uniqueState.map((state, index) => (
+            <div
+              key={index}
+              className={`rounded-md cursor-pointer ${
+                selectedState === state ? "bg-green-900" : "bg-[#BED8B2] "
+              }`}
+              onClick={() => handleStateClick(state)}
+            >
+              <button className="p-3 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
+                {state}
+              </button>
+            </div>
+          ))}
         </div>
-        <div className="bg-[#BED8B2] rounded-md">
-          <p className="p-3 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
-            Selangor
-          </p>
-        </div>
-        <div className="bg-[#BED8B2] rounded-md">
-          <p className="p-3 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
-            Penang
-          </p>
-        </div>
-      </div>
-
-      <div className="flex justify-center max-container w-full ">
-        <p className="bg-green-900 lg:px-96 rounded-md text-white text-[24px] font-bold px-20">
-          Kuala Lumpur
-        </p>
       </div>
 
       <div className="flexCenter flex-col">
         <div className="padding-container max-container w-full lg:px-56 px-6">
           <div className="lg:flex w-full lg:px-12 my-10 gap-5">
             <div className="">
-              <p className="font-bold text-green-950 my-1">
-                AEON AU2 Setiawangsa
-              </p>
-              <p className="text-[12px] my-1">
-                Lot G26 Ground Floor, No.6 Jalan Taman Setiawangsa AU2, Taman
-                Keramat, 54200 Kuala Lumpur.
-              </p>
-
-              <div className="flex">
-                <p className="font-bold">TEL 03-4251 1151</p>
-                <p className="border border-green-950 lg:ml-40 ml-28 font-bold px-2">
-                  More Info
-                </p>
-              </div>
-            </div>
-
-            <div className="">
-              <p className="font-bold text-green-950 my-1">
-                AEON AU2 Setiawangsa
-              </p>
-              <p className="text-[12px] my-1">
-                Lot G26 Ground Floor, No.6 Jalan Taman Setiawangsa AU2, Taman
-                Keramat, 54200 Kuala Lumpur.
-              </p>
-              <div className="flex">
-                <p className="font-bold">TEL 03-4251 1151</p>
-                <p className="border border-green-950 lg:ml-40 ml-28 font-bold px-2">
-                  More Info
-                </p>
-              </div>
+              {selectedState && (
+                <div className="max-container">
+                  <div className="flex justify-center max-container w-full bg-green-900 rounded-md">
+                    <p className=" text-white text-[24px] font-bold px-20">
+                      {selectedState}
+                    </p>
+                  </div>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    {outletsInSelectedState.map((outlet, index) => (
+                      <OutletListItem key={index} outlet={outlet} />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
@@ -127,12 +174,7 @@ const Footer = () => {
   );
 };
 
-type FooterListItem = {
-  title: string;
-  link: string;
-};
-
-const FooterListItem = ({ title, link }: FooterListItem) => {
+const FooterListItem: React.FC<FooterListItem> = ({ title, link }) => {
   return (
     <li className="flex flex-wrap m-4">
       <Link href="/" className="">

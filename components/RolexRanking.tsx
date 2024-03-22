@@ -4,7 +4,7 @@ import React from "react";
 const RolexRanking = () => {
   return (
     <section className="flexCenter flex-col mt-10">
-      <div className="padding-container max-container w-full lg:px-56 px-6">
+      <div className="padding-container max-container w-full lg:px-72 px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Rolex Purchase Ranking
         </h2>
@@ -33,8 +33,8 @@ const RolexRanking = () => {
           <div className="text-center my-10">
             <Image
               src={"/images/explorer2.png"}
-              width={150}
-              height={180}
+              width={200}
+              height={300}
               alt={"Submariner"}
               title="Rolex Explorer II"
             />
