@@ -5,7 +5,7 @@ import Image from "next/image";
 const PointPurchaseRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
-      <div className="padding-container max-container w-full lg:px-80 px-6">
+      <div className="padding-container max-container w-full lg:px-[23.75rem] px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Points of Rolex Purchases
         </h2>
@@ -46,7 +46,7 @@ const PointRolexPurchaseItem = ({
   return (
     <li className="shadow-2xl">
       <div className="text-left">
-        <div className="relative w-full h-[88px] lg:h-[305px]">
+        <div className="relative w-full h-[88px] lg:h-[216px]">
           <Image
             src={picture}
             alt="Banner"

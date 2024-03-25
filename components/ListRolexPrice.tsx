@@ -95,13 +95,7 @@ const PriceListItem = ({ picture, title, price1, price2 }: PriceListItem) => {
       {/* Column 1: Small Image */}
       <div className="col-span-1 items-center w-auto">
         {" "}
-        <Image
-          src={picture}
-          width={100}
-          height={100}
-          alt={title}
-          title={title}
-        />
+        <Image src={picture} width={75} height={75} alt={title} title={title} />
       </div>
 
       {/* Column 2: Title */}

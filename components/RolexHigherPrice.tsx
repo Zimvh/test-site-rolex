@@ -10,7 +10,7 @@ const RolexHigherPrice = () => {
         <p className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Sell your Rolex at a higher price
         </p>
-        <div className="flex shadow-2xl my-10 py-5 lg:px-20 px-5 gap-2">
+        <div className="flex shadow-md my-10 py-5 lg:px-20 px-5 gap-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="self-start mt-[7px]"
@@ -63,7 +63,7 @@ const RolexHigherPrice = () => {
           </div>
         </div>
 
-        <div className="flex shadow-2xl my-10 py-5 lg:px-20 px-5 gap-2">
+        <div className="flex shadow-md my-10 py-5 lg:px-20 px-5 gap-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="self-start mt-[7px]"
@@ -119,7 +119,7 @@ const RolexHigherPrice = () => {
           </div>
         </div>
 
-        <div className="flex shadow-2xl my-10 py-5 lg:px-20 px-5 gap-2">
+        <div className="flex shadow-md my-10 py-5 lg:px-20 px-5 gap-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="self-start mt-[7px]"
