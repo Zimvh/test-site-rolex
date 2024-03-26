@@ -5,7 +5,7 @@ import Image from "next/image";
 const PointPurchaseRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
-      <div className="padding-container max-container w-full lg:px-[23.75rem] px-6">
+      <div className="padding-container max-container w-full lg:px-[22.75rem] px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Points of Rolex Purchases
         </h2>
@@ -59,11 +59,9 @@ const PointRolexPurchaseItem = ({
           />
         </div>
         <div className="p-4">
-          <h3 className="mt-1 ml-2 font-bold">{reason}</h3>
-          <p className="mt-1 ml-2 font-bold text-[14px] lg:text-[16px]">
-            {title}
-          </p>
-          <p className="mt-1 ml-2 text-left">{desc}</p>
+          <h3 className="mt-1 font-bold">{reason}</h3>
+          <p className="mt-1 font-bold text-[14px] lg:text-[16px]">{title}</p>
+          <p className="mt-1 text-left">{desc}</p>
         </div>
       </div>
     </li>
