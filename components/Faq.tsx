@@ -35,12 +35,12 @@ const FaqList = ({ q, a }: FaqList) => {
         <span className="transition group-open duration-500 pr-5">
           <svg
             fill="none"
-            height="24"
+            height="16"
             shape-rendering="geometricPrecision"
-            stroke="currentColor"
+            stroke="#265C26"
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="1.5"
+            stroke-width="2.5"
             viewBox="0 0 24 24"
             width="24"
           >
