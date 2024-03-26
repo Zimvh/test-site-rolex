@@ -6,7 +6,7 @@ const ComparePrice = () => {
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full lg:px-72 px-6">
-        <h2 className="text-center text-4xl font-bold mb-8 text-[24px] lg:text-[38px] lg:leading-[60px]">
+        <h2 className="text-center text-[38px] font-bold mb-8 text-[24px] lg:text-[38px] lg:leading-[60px]">
           Comparing with other companies <br className="hidden lg:block" /> we
           purchase Rolex at a higher price?
         </h2>

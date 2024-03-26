@@ -27,7 +27,7 @@ const ListRolexPrice = () => {
   return (
     <section className="flexCenter flex-col my-20 relative">
       <div className="padding-container max-container w-full lg:px-72 px-6">
-        <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
+        <h2 className="text-center text-[38px] font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
           Price of Rolex watches have seen tremendous growth over the year.
         </h2>
         <div className="grid grid-cols-4 mb-[10px] pt-9 pb-0">
@@ -91,15 +91,22 @@ type PriceListItem = {
 
 const PriceListItem = ({ picture, title, price1, price2 }: PriceListItem) => {
   return (
-    <div className="grid grid-cols-4 mb-[10px] border-b-2">
+    <div className="grid grid-cols-4 mb-[10px] border-b-2 ">
       {/* Column 1: Small Image */}
       <div className="col-span-1 items-center w-auto">
         {" "}
-        <Image src={picture} width={75} height={75} alt={title} title={title} />
+        <Image
+          className="mb-3"
+          src={picture}
+          width={75}
+          height={75}
+          alt={title}
+          title={title}
+        />
       </div>
 
       {/* Column 2: Title */}
-      <div className="col-span-1 self-center text-[12px] lg:text-[16px]">
+      <div className="col-span-1 self-center text-[12px] lg:text-[16px] lg:-ml-[100px]">
         {title}
       </div>
 
