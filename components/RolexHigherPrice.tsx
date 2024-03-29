@@ -18,26 +18,26 @@ const RolexHigherPrice = () => {
             {isOpen ? (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
-                width="20"
+                width="24"
               >
                 <path d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 5v14M5 12h14" />
@@ -71,26 +71,26 @@ const RolexHigherPrice = () => {
             {isOpen ? (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
-                width="20"
+                width="24"
               >
                 <path d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 5v14M5 12h14" />
@@ -127,26 +127,26 @@ const RolexHigherPrice = () => {
             {isOpen ? (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
-                width="20"
+                width="24"
               >
                 <path d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
               <svg
                 fill="none"
-                height="20"
+                height="16"
                 shape-rendering="geometricPrecision"
-                stroke="currentColor"
+                stroke="#265C26"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="1.5"
+                stroke-width="2.5"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 5v14M5 12h14" />
