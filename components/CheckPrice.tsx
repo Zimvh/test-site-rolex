@@ -48,7 +48,7 @@ const CheckPrice = () => {
 
   return (
     <section className="flex-col flexCenter bg-center bg-no-repeat ">
-      <div className="max-container padding-container relative w-fulllg:py-4 lg:px-72 mt-10">
+      <div className="max-container padding-container relative w-full lg:py-4 lg:px-72 mt-10">
         <div className="bg-[#31452A] flex w-full auto flex-col lg:flex-row">
           <div className="">
             <Image
@@ -111,7 +111,7 @@ const RolexPriceItem = ({
   data: { title: string; model: string; price: string; category: string }[];
 }) => {
   return (
-    <div className="w-full lg:py-4 lg:px-5">
+    <div className="w-full lg:py-4 lg:px-72">
       <ul className="">
         {data.map((item, index) => (
           <li
