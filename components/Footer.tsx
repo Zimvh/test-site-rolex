@@ -101,18 +101,15 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex justify-center my-5">
-        <div className="flex items-center bg-green-800 rounded-lg w-96 mx-5">
+        <div className="flex items-center mx-10">
           <Image
-            src="/images/woman.png"
+            src="/images/rolex-woman.png"
             alt="Woman Jewel Cafe"
-            width={100}
-            height={150}
-            className="absolute pb-[22px]"
+            width={500}
+            height={500}
+            // className="mx-[20px]"
             title="Woman JC"
           />
-          <p className="text-[26px] flex flex-wrap m-4 text-white font-semibold ml-[120px]">
-            Jewel Cafe Outlet Staff Recruitment
-          </p>
         </div>
       </div>
       <div className="flex justify-center mt-9">
@@ -122,7 +119,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex justify-center my-9 mx-5">
-        <div className="flex rounded-md gap-3 ">
+        <div className="flex rounded-md gap-1">
           {uniqueState.map((state, index) => (
             <div
               key={index}
@@ -131,7 +128,7 @@ const Footer: React.FC = () => {
               }`}
               onClick={() => handleStateClick(state)}
             >
-              <button className="p-3 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
+              <button className="p-1 lg:min-w-[200px] text-center font-bold lg:text-[20px] text-white">
                 {state}
               </button>
             </div>

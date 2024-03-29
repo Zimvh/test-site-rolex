@@ -5,7 +5,7 @@ import Image from "next/image";
 const PointPurchaseRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
-      <div className="padding-container max-container w-full lg:px-72 px-6">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Points of Rolex Purchases
         </h2>
@@ -13,7 +13,7 @@ const PointPurchaseRolex = () => {
           Why Jewel Cafe is strong in Rolex purchases
         </p>
         <div>
-          <ul className="grid gap-2 lg:gap-x-52 lg:gap-y-5 grid-cols-2">
+          <ul className="grid gap-2  lg:grid-cols-3 grid-cols-1">
             {POINTROLEX.map((pointRolexPurchase) => (
               <PointRolexPurchaseItem
                 key={pointRolexPurchase.reason}
@@ -46,7 +46,7 @@ const PointRolexPurchaseItem = ({
   return (
     <li className="shadow-2xl">
       <div className="text-left">
-        <div className="relative w-full h-[88px] lg:h-[216px]">
+        <div className="relative w-full h-[200px] lg:h-[190px]">
           <Image
             src={picture}
             alt="Banner"

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 const CustReviews = () => {
   return (
     <section className="flexCenter flex-col pt-10 bg-[#EDF4ED]">
-      <div className="padding-container max-container w-full lg:px-72">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Customer Reviews
         </h2>

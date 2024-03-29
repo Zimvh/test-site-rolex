@@ -4,7 +4,7 @@ import React from "react";
 const Faq = () => {
   return (
     <section className="flexCenter flex-col mt-20">
-      <div className="padding-container max-container w-full lg:px-72 px-5">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <div className="text-center">
           <h2 className="font-bold text-5xl mt-5 tracking-tight">
             Rolex purchase <span className="text-[#265C26]">FAQ</span>

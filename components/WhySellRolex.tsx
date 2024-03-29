@@ -3,10 +3,10 @@ import React from "react";
 const WhySellRolex = () => {
   return (
     <section className="flexCenter flex-col mt-16">
-      <div className="padding-container max-container w-full lg:px-72 px-5">
-        <h1 className="text-center text-[38px] font-bold mb-4">
-          Why Sell Rolex?
-        </h1>
+      <h1 className="text-center text-[38px] font-bold mb-4">
+        Why Sell Rolex?
+      </h1>
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <p className="justify-between leading-8 text-left">
           If you want to sell Rolex, leave it to Jewel Cafe! Numerous adults
           around the world dream of owning Rolex watch, such as the Daytona,

@@ -27,7 +27,7 @@ const ListRolexPrice = () => {
   return (
     <section className="flexCenter flex-col my-20 relative">
       <div className="padding-container max-container w-full lg:px-72 px-6">
-        <h2 className="text-center text-[38px] font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
+        <h2 className="text-center font-bold mb-4 text-[24px] lg:text-[38px] lg:mx-14 lg:leading-[60px]">
           Price of Rolex watches have seen tremendous growth over the year.
         </h2>
         <div className="grid grid-cols-4 mb-[10px] pt-9 pb-0">
@@ -51,7 +51,7 @@ const ListRolexPrice = () => {
             </p>
           </div>
         </div>
-        <ul>
+        <ul className="mx-1">
           {ROLEX_PRICELST.slice(
             0,
             isMobile && !expanded ? 3 : ROLEX_PRICELST.length

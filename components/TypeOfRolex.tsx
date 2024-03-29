@@ -5,7 +5,7 @@ import React from "react";
 const TypeOfRolex = () => {
   return (
     <section className="flexCenter flex-col mt-40">
-      <div className="padding-container max-container w-full lg:px-72 px-6">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Type of Rolex Watches
         </h2>
@@ -34,7 +34,7 @@ type TypeofRolex = {
 const TypeofRolex = ({ picture, title }: TypeofRolex) => {
   return (
     <li className="border border-green-950 rounded-lg py-2 px-2">
-      <div className="relative w-full h-[110px] lg:h-[140px]">
+      <div className="relative w-full h-[93px] lg:h-[140px]">
         <Image
           src={picture}
           alt="Banner"

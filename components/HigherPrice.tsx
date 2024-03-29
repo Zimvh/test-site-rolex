@@ -7,7 +7,7 @@ import React from "react";
 const HigherPrice = () => {
   return (
     <section className="flexCenter flex-col mt-40">
-      <div className="padding-container max-container w-full lg:px-72 px-8">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           We purchase at a Higher Price!
         </h2>
@@ -47,7 +47,7 @@ type HigherPriceItem = {
 const HigherPriceItem = ({ picture, title, desc, price }: HigherPriceItem) => {
   return (
     <li className="shadow-2xl">
-      <div className="relative w-full h-[200px]">
+      <div className="relative w-full lg:h-[200px] h-[134px]">
         <Image
           src={picture}
           alt="Banner"

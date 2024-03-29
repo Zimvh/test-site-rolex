@@ -5,7 +5,7 @@ import Image from "next/image";
 const PriceTable = () => {
   return (
     <section className="flexCenter flex-col mt-10">
-      <div className="padding-container max-container w-full lg:px-72 px-6">
+      <div className="padding-container max-container w-full lg:px-72 px-10">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Rolex purchase price table
         </h2>
