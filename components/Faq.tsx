@@ -29,7 +29,7 @@ type FaqList = {
 
 const FaqList = ({ q, a }: FaqList) => {
   return (
-    <details className="group">
+    <details>
       {" "}
       <summary className="flex items-center font-medium cursor-pointer list-none border-t border-b border-gray-400 py-5 my-5 lg:pl-16 pl-3 ">
         <span className="transition group-open duration-500 pr-5">

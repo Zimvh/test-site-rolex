@@ -43,8 +43,8 @@ const PriceListGraphItem = ({ picture, title, refNum }: PriceListGraphItem) => {
   return (
     <li>
       <div className="p-4 text-center">
-        <p className="text-[14px] lg:text-[16px]">{title}</p>
-        <p className="text-[12px]">{refNum}</p>
+        <p className="text-[10px] lg:text-[16px]">{title}</p>
+        <p className="text-[8px]">{refNum}</p>
         <div className="relative w-full h-[88px] lg:h-[262px]">
           <Image
             src={picture}
