@@ -6,7 +6,7 @@ const Faq = () => {
     <section className="flexCenter flex-col mt-20">
       <div className="padding-container max-container w-full lg:px-72 px-10">
         <div className="text-center">
-          <h2 className="font-bold text-5xl mt-5 tracking-tight">
+          <h2 className="font-bold text-[3rem] mt-5 leading-5">
             Rolex purchase <span className="text-[#265C26]">FAQ</span>
           </h2>
         </div>
