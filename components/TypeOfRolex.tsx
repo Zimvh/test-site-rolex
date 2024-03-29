@@ -4,7 +4,7 @@ import React from "react";
 
 const TypeOfRolex = () => {
   return (
-    <section className="flexCenter flex-col mt-40">
+    <section className="flexCenter flex-col mt-24">
       <div className="padding-container max-container w-full lg:px-72 px-6">
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Type of Rolex Watches

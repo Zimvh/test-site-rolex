@@ -6,7 +6,7 @@ const ComparePrice = () => {
   return (
     <section className="flexCenter flex-col">
       <div className="padding-container max-container w-full lg:px-72 px-10">
-        <h2 className="text-center text-[38px] font-bold mb-8 text-[24px] lg:text-[38px] lg:leading-[60px]">
+        <h2 className="text-center font-bold mb-8 text-[24px] lg:text-[38px] lg:leading-[60px]">
           Comparing with other companies <br className="hidden lg:block" /> we
           purchase Rolex at a higher price?
         </h2>
@@ -17,7 +17,7 @@ const ComparePrice = () => {
           the highest satisfaction rating.
         </p>
         <div>
-          <ul className="mt-10 grid gap-0 grid-cols-2">
+          <ul className="mt-10 grid lg:gap-0 gap-1 gap-y-6 grid-cols-2">
             {PRICELISTGRAPH.map((pricelistGraph) => (
               <PriceListGraphItem
                 key={pricelistGraph.title}
@@ -42,10 +42,10 @@ type PriceListGraphItem = {
 const PriceListGraphItem = ({ picture, title, refNum }: PriceListGraphItem) => {
   return (
     <li>
-      <div className="p-4 text-center">
+      <div className="lg:p-4 text-center">
         <p className="text-[10px] lg:text-[16px]">{title}</p>
         <p className="text-[8px]">{refNum}</p>
-        <div className="relative w-full h-[88px] lg:h-[262px]">
+        <div className="relative w-full h-[96px] lg:h-[262px]">
           <Image
             src={picture}
             alt="Banner"
