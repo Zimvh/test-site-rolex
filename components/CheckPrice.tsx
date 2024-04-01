@@ -11,6 +11,7 @@ const CheckPrice = () => {
   >([]);
 
   const [uniqueCategories, setUniqueCategories] = useState<string[]>([]);
+  const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
     // Fetch data when component mounts
@@ -36,13 +37,20 @@ const CheckPrice = () => {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(event.target.value);
+    console.log(searchInput);
   };
 
   const handleSearch = () => {
     // Filter data based on input value
-    const filtered = ROLEXPRICE.filter((item) =>
-      item.category.toLowerCase().includes(searchInput.toLowerCase())
-    );
+    const filtered = ROLEXPRICE.filter((item) => {
+      const searchInputLowerCase = searchInput.toLowerCase();
+      // Check if any property contains the search input value
+      return Object.values(item).some(
+        (value) =>
+          typeof value === "string" &&
+          value.toLowerCase().includes(searchInputLowerCase)
+      );
+    });
     setFilteredData(filtered);
   };
 
