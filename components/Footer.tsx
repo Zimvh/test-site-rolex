@@ -174,7 +174,7 @@ const Footer: React.FC = () => {
 const FooterListItem: React.FC<FooterListItem> = ({ title, link }) => {
   return (
     <li className="flex flex-wrap m-4">
-      <Link href="/" className="">
+      <Link href={link} className="">
         {title}
       </Link>
       <p className="ml-4">|</p>

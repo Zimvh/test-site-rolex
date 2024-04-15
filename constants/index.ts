@@ -351,43 +351,43 @@ export const CUST_REVIEWS =[
 
 export const FOOTER =[
     {
-        link:'',
+        link:'https://jewel-cafe.my/shops/',
         title:'Shop Info',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/purchase/',
         title:'Service & Product',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/blog/',
         title:'Purchase Blog',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/first/',
         title:'About Us',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/qa/',
         title:'FAQ',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/media/',
         title:'Media',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/column/',
         title:'Column',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/company/',
         title:'Company Profile',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/property/',
         title:'Property',
     },
     {
-        link:'',
+        link:'https://jewel-cafe.my/privacy/',
         title:'Privacy Policy',
     },
 ]
