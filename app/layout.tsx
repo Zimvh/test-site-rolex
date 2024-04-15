@@ -15,14 +15,14 @@ interface ExtendedMetadata extends Metadata {
 }
 
 export const metadata: ExtendedMetadata = {
-  title: "Sell Luxury Watch",
+  title: "Sell Rolex Watch | High Price Purchase | in Malaysia",
   description:
-    "Sell Your Branded Watch | High Price Purchase | JEWEL CAFE Malaysia",
+    "Please visit us to sell your Rolex at a good price! We accept any Rolex models like Datejust, Submariner and Explorer.",
   keywords: "luxury, watch, sell, branded, high price",
-  ogTitle: "Sell Luxury Watch",
+  ogTitle: "Sell Rolex Watch | High Price Purchase | in Malaysia",
   ogDescription:
-    "Sell Your Branded Watch | High Price Purchase | JEWEL CAFE Malaysia",
-  ogImage: "/images/jc-logo.png", // Path to your Open Graph image
+    "Please visit us to sell your Rolex at a good price! We accept any Rolex models like Datejust, Submariner and Explorer.",
+  ogImage: "/images/jc-logo.png",
 };
 
 export default function RootLayout({
