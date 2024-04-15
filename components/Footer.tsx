@@ -15,11 +15,12 @@ type OutletListItemProps = {
     name: string;
     address: string;
     tel: string;
+    link: string;
   };
 };
 
 const OutletListItem: React.FC<OutletListItemProps> = ({ outlet }) => {
-  const { name, address, tel } = outlet;
+  const { name, address, tel, link } = outlet;
 
   return (
     <div>
@@ -28,9 +29,12 @@ const OutletListItem: React.FC<OutletListItemProps> = ({ outlet }) => {
 
       <div className="flex">
         <p className="font-bold">{tel}</p>
-        <p className="border border-green-950 lg:ml-40 ml-28 font-bold px-2">
+        <Link
+          href={link}
+          className="border border-green-950 lg:ml-40 ml-28 font-bold px-2"
+        >
           More Info
-        </p>
+        </Link>
       </div>
     </div>
   );
@@ -40,7 +44,7 @@ const Footer: React.FC = () => {
   const [uniqueState, setUniqueState] = useState<string[]>([]);
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [outletsInSelectedState, setOutletsInSelectedState] = useState<
-    { name: string; address: string; tel: string }[]
+    { name: string; address: string; tel: string; link: string }[]
   >([]);
 
   useEffect(() => {
@@ -101,7 +105,10 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="flex justify-center my-5">
-        <div className="flex items-center mx-10">
+        <Link
+          href={"https://jewel-cafe.my/recruit/"}
+          className="flex items-center mx-10"
+        >
           <Image
             src="/images/rolex-woman.png"
             alt="Woman Jewel Cafe"
@@ -110,7 +117,7 @@ const Footer: React.FC = () => {
             // className="mx-[20px]"
             title="Woman JC"
           />
-        </div>
+        </Link>
       </div>
       <div className="flex justify-center mt-9">
         <p className="font-bold text-[34px] text-green-900 text-center">
@@ -159,7 +166,13 @@ const Footer: React.FC = () => {
 
           <div className="lg:flex text-center gap-32 justify-center font-bold text-md text-green-950 my-10">
             <p>Jewel Cafe Overseas</p>
-            <p>Japan | Hong Kong | Taiwan | Singapore | Thailand</p>
+            <div className="flex">
+              <Link href={"https://jewel-cafe.jp/"}>Japan |&nbsp;</Link>
+              <Link href={"https://jewel-cafe.hk/"}>Hong Kong |&nbsp; </Link>
+              <Link href={"https://jewel-cafe.tw/"}>Taiwan |&nbsp; </Link>
+              <Link href={"https://jewel-cafe.sg/"}>Singapore |&nbsp; </Link>
+              <Link href={"https://jewel-cafe.co.th/"}>Thailand</Link>
+            </div>
           </div>
         </div>
       </div>
