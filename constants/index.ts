@@ -126,25 +126,25 @@ export const HIGHERPRICE = [
         picture:'/images/rolexlist/Rolex-GMT-MasterII-116710LN.jpeg',
         title:'Rolex GMT Master II 116710LN',
         desc:'We bought at',
-        price:'RM 70,950'
+        price:'RM 46,200'
     },
     {
         picture:'/images/rolexlist/Rolex-Daytona-116520.jpeg',
         title:'Rolex Daytona 116520',
         desc:'We bought at',
-        price:'RM 70,950'
+        price:'RM 99,000'
     },
     {
         picture:'/images/rolexlist/Rolex-Pearlmaster-18946A-PT.jpeg',
         title:'Rolex Pearlmaster 18946A PT',
         desc:'We bought at',
-        price:'RM 70,950'
+        price:'RM 165,000'
     },
     {
         picture:'/images/rolexlist/Rolex-Yacht-MasterⅡ-116680.jpeg',
         title:'Rolex Yacht-Master Ⅱ 116680',
         desc:'We bought at',
-        price:'RM 70,950'
+        price:'RM 72,600'
     },
 ]
 

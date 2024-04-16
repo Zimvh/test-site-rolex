@@ -2,5 +2,13 @@
 module.exports = {
   siteUrl: "https://sellluxurywatch.my",
   generateRobotsTxt: true, // (optional)
-  // ...other options
+  generateIndexSitemap: false,
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+  },
 };
