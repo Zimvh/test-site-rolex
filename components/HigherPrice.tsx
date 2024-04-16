@@ -11,7 +11,7 @@ const HigherPrice = () => {
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           We purchase at a Higher Price!
         </h2>
-        <p className="justify-between leading-8 text-center">
+        <p className="justify-between lg:leading-8 leading-[1.7rem] text-center">
           Unparalleled number of assessments and purchases High price purchases
           of Rolex.
         </p>

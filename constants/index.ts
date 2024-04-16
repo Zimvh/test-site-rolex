@@ -395,71 +395,88 @@ export const FOOTER =[
 export const TYPE0FROLEX =[
     {
         picture:'/images/Rolex/daytona.png',
-        title:'Daytona'
+        title:'Daytona',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/daytona/'
     },
     {
         picture:'/images/Rolex/datejust_b.jpg',
-        title:'Datejust'
+        title:'Datejust',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/datejust/'
     },
     {
         picture:'/images/Rolex/DayDate.jpg',
-        title:'Day-date'
+        title:'Day-date',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/daydate/'
     },
     {
         picture:'/images/Rolex/Explorer.jpg',
-        title:'Explorer'
+        title:'Explorer',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/explorer/'
     },
     {
         picture:'/images/Rolex/ExplorerII.jpg',
-        title:'Explorer II'
+        title:'Explorer II',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/explorer2/'
     },
     {
         picture:'/images/Rolex/Submariner.jpg',
-        title:'Submariner'
+        title:'Submariner',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/submariner/'
     },
     {
         picture:'/images/Rolex/ExplorerII.jpg',
-        title:'GMT Master'
+        title:'GMT Master',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/gmt-master/'
     },
     {
         picture:'/images/Rolex/Deepsea.jpg',
-        title:'Sea Dweller'
+        title:'Sea Dweller',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/sea-dweller/'
     },
     {
         picture:'/images/Rolex/skydweller.jpg',
-        title:'Sky Dweller'
+        title:'Sky Dweller',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/sky-dweller/'
     },
     {
         picture:'/images/Rolex/airking.jpg',
-        title:'Airking'
+        title:'Airking',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/air-king/'
     },
     {
         picture:'/images/Rolex/Yatch.jpg',
-        title:'Yatch - Master'
+        title:'Yatch - Master',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/yacht-master/'
     },
     {
         picture:'/images/Rolex/Milgauss.jpg',
-        title:'Milgauss'
+        title:'Milgauss',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/milgauss/'
     },
     {
         picture:'/images/Rolex/Cellini.jpg',
-        title:'Cellini'
+        title:'Cellini',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/cellini/'
     },
     {
         picture:'/images/Rolex/turno.jpg',
-        title:'Turn - O - Graph'
+        title:'Turn - O - Graph',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/turn-o-graph/'
     },
     {
         picture:'/images/Rolex/rolex_an.jpg',
-        title:'Rolex Antique'
+        title:'Rolex Antique',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/rolex-antique/'
     },
     {
         picture:'/images/Rolex/opp.jpg',
-        title:'Oyster Perpetual'
+        title:'Oyster Perpetual',
+        link:'https://jewel-cafe.my/tokei-kaitori/rolex-top/oyster-perpetual/'
     },
     {
         picture:'/images/Rolex/broken-rolex.jpg',
-        title:'Broken Rolex'
+        title:'Broken Rolex',
+        link:''
     },
 ]
 

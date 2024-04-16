@@ -166,7 +166,7 @@ const Footer: React.FC = () => {
 
           <div className="lg:flex text-center gap-32 justify-center font-bold text-md text-green-950 my-10">
             <p>Jewel Cafe Overseas</p>
-            <div className="flex">
+            <div className="lg:flex">
               <Link href={"https://jewel-cafe.jp/"}>Japan |&nbsp;</Link>
               <Link href={"https://jewel-cafe.hk/"}>Hong Kong |&nbsp; </Link>
               <Link href={"https://jewel-cafe.tw/"}>Taiwan |&nbsp; </Link>

@@ -55,10 +55,10 @@ const CheckPrice = () => {
   };
 
   return (
-    <section className="flex-col flexCenter bg-center bg-no-repeat ">
+    <section className="flex-col flexCenter bg-center bg-no-repeat mx-8 lg:mx-0">
       <div className="max-container padding-container relative w-full lg:py-4 lg:px-72 mt-10">
         <div className="bg-[#31452A] flex w-full auto flex-col lg:flex-row">
-          <div className="">
+          <div className="hidden lg:block">
             <Image
               src="/images/bnr.png"
               width={1000}

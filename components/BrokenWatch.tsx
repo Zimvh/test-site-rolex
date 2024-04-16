@@ -16,11 +16,11 @@ const BrokenWatch = () => {
             title="Banner"
           />
         </div>
-        <h2 className="text-left lg:leading-[4rem] text-sm lg:text-5xl font-bold my-4">
+        <h2 className="text-left lg:leading-[4rem] font-bold my-4">
           Old and Battered Rolex Do you have a Rolex that you think you would
           never be able to sell?
         </h2>
-        <p className="justify-between leading-8 text-left">
+        <p className="justify-between lg:leading-8 leading-[1.7rem] text-left">
           We buy even battered watches! Jewel Cafe specializes in the purchase
           of broken, old, and parts-only watches, as such we will buy your
           broken, battered, stuck, old, or junk Rolex watches at a high price.

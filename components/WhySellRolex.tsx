@@ -7,7 +7,7 @@ const WhySellRolex = () => {
         Why Sell Rolex?
       </h1>
       <div className="padding-container max-container w-full lg:px-72 px-10">
-        <p className="justify-between leading-8 text-left">
+        <p className="justify-between lg:leading-8 leading-[1.7rem] text-left">
           If you want to sell Rolex, leave it to Jewel Cafe! Numerous adults
           around the world dream of owning Rolex watch, such as the Daytona,
           Date-just, Day-date, Submariner, Explorer I, Explorer II, Oyster

@@ -10,7 +10,7 @@ const ComparePrice = () => {
           Comparing with other companies <br className="hidden lg:block" /> we
           purchase Rolex at a higher price?
         </h2>
-        <p className="justify-between leading-8 text-left">
+        <p className="justify-between lg:leading-8 leading-[1.7rem] text-left">
           We have a wide range of sales channels, and our professional staff can
           provide you with the best price in the industry for any kind of Luxury
           Watches. Please feel free to use our free appraisal service, which has

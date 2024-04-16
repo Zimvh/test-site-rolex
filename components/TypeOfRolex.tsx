@@ -1,5 +1,7 @@
 import { TYPE0FROLEX } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
+import { type } from "os";
 import React from "react";
 
 const TypeOfRolex = () => {
@@ -17,6 +19,7 @@ const TypeOfRolex = () => {
                 key={typeRolex.title}
                 picture={typeRolex.picture}
                 title={typeRolex.title}
+                link={typeRolex.link}
               />
             ))}
           </ul>
@@ -29,26 +32,29 @@ const TypeOfRolex = () => {
 type TypeofRolex = {
   picture: string;
   title: string;
+  link: string;
 };
 
-const TypeofRolex = ({ picture, title }: TypeofRolex) => {
+const TypeofRolex = ({ picture, title, link }: TypeofRolex) => {
   return (
     <li className="border border-green-950 rounded-lg py-2 px-2">
-      <div className="relative w-full h-[110px] lg:h-[140px]">
-        <Image
-          src={picture}
-          alt="Banner"
-          //   layout="fill"
-          //   objectFit="cover"
-          width={250}
-          height={250}
-          priority
-          title={title}
-        />
-      </div>
-      <div className="text-center border border-green-950 bg-green-900 rounded-xl text-white">
-        <p>{title}</p>
-      </div>
+      <Link href={link}>
+        <div className="relative w-full h-[110px] lg:h-[140px]">
+          <Image
+            src={picture}
+            alt="Banner"
+            //   layout="fill"
+            //   objectFit="cover"
+            width={250}
+            height={250}
+            priority
+            title={title}
+          />
+        </div>
+        <div className="text-center border border-green-950 bg-green-900 rounded-xl text-white">
+          <p>{title}</p>
+        </div>
+      </Link>
     </li>
   );
 };

@@ -9,11 +9,11 @@ const PointPurchaseRolex = () => {
         <h2 className="text-center text-4xl font-bold mb-4 text-[24px] lg:text-[38px]">
           Points of Rolex Purchases
         </h2>
-        <p className="justify-between leading-8 text-center my-4">
+        <p className="justify-between leading-[1.7rem] text-center my-4">
           Why Jewel Cafe is strong in Rolex purchases
         </p>
         <div>
-          <ul className="grid gap-2  lg:grid-cols-3 grid-cols-1">
+          <ul className="grid lg:gap-2 gap-6 lg:grid-cols-3 grid-cols-1">
             {POINTROLEX.map((pointRolexPurchase) => (
               <PointRolexPurchaseItem
                 key={pointRolexPurchase.reason}
