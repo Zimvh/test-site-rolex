@@ -45,8 +45,8 @@ const RolexHigherPrice = () => {
             )}
           </button>
           <div>
-            <p className="justify-between leading-8 text-left">
-              <span className="font-bold ">
+            <p className="justify-between lg:leading-8 leading-[1.7rem] text-left mb-2 lg:mb-0">
+              <span className="font-bold">
                 Sell your Rolex as soon as possible if you have decided that you
                 won’t be using it.
               </span>
@@ -98,7 +98,7 @@ const RolexHigherPrice = () => {
             )}
           </button>
           <div>
-            <p className="justify-between leading-8 text-left">
+            <p className="justify-between lg:leading-8 leading-[1.7rem] text-left mb-2 lg:mb-0">
               <span className="font-bold ">
                 Sell your Rolex with its warranty card and accessories for a
                 higher price.
@@ -154,7 +154,7 @@ const RolexHigherPrice = () => {
             )}
           </button>
           <div>
-            <p className="justify-between leading-8 text-left">
+            <p className="justify-between lg:leading-8 leading-[1.7rem] text-left mb-2 lg:mb-0">
               <span className="font-bold ">
                 Remove the dirt from your Rolex and keep it clean to sell it at
                 a higher price.
