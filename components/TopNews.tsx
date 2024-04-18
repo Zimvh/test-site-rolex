@@ -31,7 +31,10 @@ type NewsListItem = {
 const NewsListItem = ({ date, title }: NewsListItem) => {
   return (
     <li className="bg-[#EFEFEF] text-[10px] lg:text-[16px]">
-      <div className="flex lg:gap-9 lg:p-4 p-2 text-center lg:ml-8 pl-2 gap-x-3">
+      <div
+        className="grid grid-cols-2 lg:gap-9 lg:p-4 p-2 text-center lg:ml-8 pl-2 gap-x-3"
+        style={{ gridTemplateColumns: "min-content auto" }}
+      >
         <p className="text-left w-max lg:text-[14px] text-[10px]">{date}</p>
         <p className="text-left lg:text-[14px] text-[10px]">{title}</p>
       </div>
