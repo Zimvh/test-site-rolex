@@ -60,8 +60,8 @@ const PointRolexPurchaseItem = ({
         </div>
         <div className="p-4">
           <h3 className="mt-1 font-bold">{reason}</h3>
-          <p className="mt-1 font-bold text-[14px] lg:text-[16px]">{title}</p>
-          <p className="mt-1 text-left">{desc}</p>
+          <p className="mt-1 font-bold text-[16px]">{title}</p>
+          <p className="mt-1 text-left text-[14px]">{desc}</p>
         </div>
       </div>
     </li>

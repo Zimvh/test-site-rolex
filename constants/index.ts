@@ -5,37 +5,37 @@ export const ROLEX_PRICELST = [
         picture:'/images/1-rolex-daytona-116500ln.png',
         title:'Rolex Daytona 116500LN',
         price1: 'RM59,000',
-        price2: 'RM150,000'
+        price2: 'RM108,200'
     },
     {
         picture:'/images/2-gmt-master-2.png',
         title:'Rolex GMT Master II 116710BNLR',
-        price1: 'RM31,6000',
-        price2: 'RM63,000'
+        price1: 'RM24,000',
+        price2: 'RM55,600'
     },
     {
         picture:'/images/3-rolex-daytona-black.png',
-        title:'Rolex Daytona 116500LN',
-        price1: 'RM59,000',
-        price2: 'RM150,000'
+        title:'Rolex Submariner 116610LN',
+        price1: 'RM20,000',
+        price2: 'RM40,200'
     },
     {
         picture:'/images/4-gmt-master-2-green.png',
-        title:'Rolex GMT Master II 116710BNLR',
-        price1: 'RM31,600',
-        price2: 'RM63,000'
-    },
-    {
-        picture:'/images/1-rolex-daytona-116500ln.png',
-        title:'Rolex Daytona 116500LN',
+        title:'Rolex Submariner 116610LV',
         price1: 'RM59,000',
         price2: 'RM150,000'
     },
     {
-        picture:'/images/1-rolex-daytona-116500ln.png',
-        title:'Rolex GMT Master II 116710BNLR',
-        price1: 'RM31,600',
-        price2: 'RM63,000'
+        picture:'/images/explorer-I.jpg',
+        title:'Rolex Explorer I 214270',
+        price1: 'RM59,000',
+        price2: 'RM150,000'
+    },
+    {
+        picture:'/images/explorer-II.jpg',
+        title:'Rolex Explorer II 216570',
+        price1: 'RM59,000',
+        price2: 'RM150,000'
     },
 ]
 

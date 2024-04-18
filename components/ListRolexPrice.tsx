@@ -47,7 +47,7 @@ const ListRolexPrice = () => {
           <div className="col-span-1 self-center justify-self-center relative">
             <div className="absolute inset-0 bg-gradient-to-r from-gray-300 via-white to-gray-300"></div>
             <p className="text-[12px] lg:text-[16px] px-5 relative z-10">
-              2022
+              2024
             </p>
           </div>
         </div>
