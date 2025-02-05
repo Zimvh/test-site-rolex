@@ -13,6 +13,17 @@ export const metadata: Metadata = {
   },
 };
 
+export const metadata: ExtendedMetadata = {
+  title: "Sell Rolex Watch | High Price Purchase | in Malaysia",
+  description:
+    "Please visit us to sell your Rolex at a good price! We accept any Rolex models like Datejust, Submariner and Explorer.",
+  keywords: "luxury, watch, sell, branded, high price",
+  ogTitle: "Sell Rolex Watch | High Price Purchase | in Malaysia",
+  ogDescription:
+    "Please visit us to sell your Rolex at a good price! We accept any Rolex models like Datejust, Submariner and Explorer.",
+  ogImage: "/images/jc-logo.png",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -20,7 +31,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Navbar />
+        <main className="relative overflow-hidden">{children}</main>
+
+        <Footer />
+      </body>
     </html>
   );
 }
