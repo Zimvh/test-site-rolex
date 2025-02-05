@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ["luxury", "watch", "sell", "branded", "high price"],
   metadataBase: new URL("https://sellluxurywatch.my/"), // Base URL for canonical URLs
   alternates: {
-    canonical: "/",
+    canonical: "https://sellluxurywatch.my/",
   },
   openGraph: {
     title: "Sell Rolex Watch | High Price Purchase | in Malaysia",
@@ -32,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="robots" content="index, follow" />
+      </head>
       <body className={inter.className}>
         <Navbar />
         <main className="relative overflow-hidden">{children}</main>
