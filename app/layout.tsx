@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="robots" content="index, follow" />
+        <meta name="msvalidate.01" content="3D350C52BCD370781248DAD14DE894DF" />
       </head>
       <body className={inter.className}>
         <Navbar />
