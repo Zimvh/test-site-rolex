@@ -35,6 +35,7 @@ export default function RootLayout({
       <head>
         <meta name="robots" content="index, follow" />
         <meta name="msvalidate.01" content="3D350C52BCD370781248DAD14DE894DF" />
+        <link rel="icon" href="/app/favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <Navbar />
